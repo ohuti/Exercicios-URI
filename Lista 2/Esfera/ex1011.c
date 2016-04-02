@@ -5,9 +5,9 @@
 
 int main(void) {
 	int R;
-	double VOL, 
+	double VOL; 
 	scanf("%d", &R);
 	VOL = (4.0/3.0) * pi * pow(R, 3);
-	printf("VOLUME = %.4f\n", VOL);
+	printf("VOLUME = %.3f\n", VOL);
 	return 0;
 }
