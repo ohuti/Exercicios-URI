@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main(void){
-	int N, Hora, Min, Seg;
+	int N, Ano, Mes, Dia;
 	scanf("%d", &N);
-	Hora = N / 3600;
-	Min = N % 3600/60;
-	Seg = N % 60;
-	printf("%d:%d:%d\n", Hora, Min, Seg);
+	Ano = N / 365;
+	Mes = N % 365 / 30;
+	Dia = N % 365 % 30;
+	printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n", Ano, Mes, Dia);
 	return 0;
 }
